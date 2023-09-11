@@ -1,14 +1,14 @@
 const express = require('express');
-const routes = require('./routes/main')
+const routes = require('./src/routes/main')
 
 const app=express();
 const port=9000;
 
-app.use('',routes);
+// app.use('',routes);
 
-// app.use("/",(req,res)=>{
-//     res.json({message: "Hello"});
-// });
+app.use("/",(req,res)=>{
+    res.json({message: "Hello"});
+});
 
 app.set("views","views");
 
